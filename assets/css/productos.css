@@ -1,0 +1,125 @@
+.seccion__productos{
+    background-color: #f5f5f5;
+    padding: 3rem 0;
+}
+
+.star_wars,
+.consolas,
+.diversos{
+    margin: 0 0 2rem 0;
+}
+
+.star_wars__head,
+.consolas__head,
+.diversos__head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.star_wars__head__titulo-principal,
+.consolas__head__titulo-principal,
+.diversos__head__titulo-principal{
+    font-weight: 700;
+    font-size: 2rem;
+    color: #464646;
+}
+
+.star_wars__head__boton,
+.consolas__head__boton,
+.diversos__head__boton{
+    color: #2A7AE4;
+    font-weight: 800;
+}
+
+.star_wars__head__boton::after,
+.consolas__head__boton::after,
+.diversos__head__boton::after{
+	content: '🡪';
+	color: #2A7AE4;
+    margin-left: .6rem;
+}
+
+.star_wars__productos,
+.consolas__productos,
+.diversos__productos,
+.productos_admin,
+.producto_similares,
+.productos_index{
+    display: grid;
+    gap: 1rem;
+    grid-auto-rows: 22rem;
+    grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+}
+
+.producto__card{
+  padding: 20px; /* Espaciado interno */
+  border: 1px solid #ccc; /* Borde opcional */
+  border-radius: 10px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 10px; 
+  background-color: #fff; 
+  overflow: hidden;
+}
+
+.producto__card__imagen{
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px; 
+}
+
+.producto__card__imagen,
+.producto__card__titulo,
+.producto__card__precio{
+    margin-bottom: .5rem;
+}
+
+.producto__card__titulo{
+    font-size: 14px;
+    font-weight: 800;
+    color: #464646;
+}
+
+.producto__card__precio{
+    font-size: 14px;
+    color: #2749c5;
+}
+
+.producto__card__boton{
+    color: #2A7AE4;
+    font-weight: 800;
+    display: block;
+    text-align: center;
+    background-color: #007bff; 
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.producto__card__boton:hover {
+    background-color: #0056b3;
+  }
+
+.productos__resultados_mensaje{
+    height: 30vh;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #464646;
+}
+
+@media only screen and (max-width: 767px){
+
+}
+
+@media (min-width:768px) and (max-width:1024px){
+
+    .productos__resultados_mensaje{
+        height: 48vh;
+    }
+
+}
